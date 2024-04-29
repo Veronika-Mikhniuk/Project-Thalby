@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a, button {
+    border: none;
+}
+
+.header {
+    padding: 16px 0;
+}
+
+.header__icons-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    margin-left: auto; /* позволяет быть всегда прижатым к правому краю*/
+
+}
+
+.container {
+    max-width: 1088px;
+    margin: auto;
+    padding: 0 16px;
+}
+
+/* для того, чтобы была возможность нормально сужать экран*/
+/*отсуп в фигме был 83px, необходимо вычислить % от 100vw - ширины экрана. В фигме ширина экрана это ширина фрейма*/
+/*83% это 5,76% от щирины фрейма в фигме*/
+.nav {
+    margin-right: 5.76vw;
+    max-width: 423px;
+    width: 100%;
+}
+
+.nav li {
+font-weight: 700;
+color: #1C1B1B;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 11vw; /*поправила по своему*/
+}
+
+.introduction {
+    background-color: #F0EFEB;
+}
+
+.introduction__text-block {
+    padding: 90px 0;
+    max-width: 525px;
+}
+
+.introduction__container {
+    display: flex;
+    justify-content:space-between;
+}
+
+.introduction__title {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 42px;
+}
+
+.introduction__text {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 26px;
+}
+
+.introduction__button {
+    color: #FFFFFF;
+    background-color: #000000;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 8px 23px;
+    border-radius: 100px;
+}
+
+.guides__people-and-society, .guides__power-and-politics {
+    background-color: rgb(204,204,204,0.3);
+}
+
+.guides__culture-and-heritage {
+    background-color: rgb(204,204,204,0.6);
+}
+
+.guides-description__container {
+    display: flex;
+    padding-top: 76px;
+    padding-bottom: 51px;
+    align-items: center;
+    column-gap: 3vw;
+}
+
+.middle-guide__container {
+    justify-content: end;
+}
+.guides-description__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 31px;
+}
+
+.guides-description__middle-title {
+    text-align: right;
+}
+
+.guides-description__text {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 40px;
+}
+
+.guides-description__middle-text {
+    text-align: right;
+}
+
+.guides-description__link {
+    color: #000000;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.guides-description__middle-link {
+    float: right
+}
+
+.guides-description__article {
+    max-width: 532px;
+}
+
+.guides-description__middle-article {
+    max-width: 513px;
+}
