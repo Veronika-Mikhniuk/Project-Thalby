@@ -188,3 +188,53 @@ color: #1C1B1B;
     line-height: 23px;
     color: #000000;
 }
+
+.pricing__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 250px;
+}
+
+.pricing__guide-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing__title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin-bottom: 52px;
+}
+
+.pricing__guide-text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+    max-width: 160px;
+    padding-top: 27px;
+    padding-bottom: 17px;
+}
+
+.guide__price {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+
+.pricing__link {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+
