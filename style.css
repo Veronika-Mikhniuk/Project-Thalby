@@ -44,6 +44,7 @@ a, button {
 .nav li {
 font-weight: 700;
 color: #1C1B1B;
+cursor: pointer;
 }
 
 .nav__list {
@@ -95,6 +96,35 @@ color: #1C1B1B;
     line-height: 20px;
     padding: 8px 23px;
     border-radius: 100px;
+    cursor: pointer;
+    transition: all 1s ease;
+    animation: pulsate 0.5s ease infinite;
+}
+
+@keyframes pulsate {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+  }
+
+.introduction__button:hover {
+    background-color: #5a5959;
+    transform: scale(0.9);
+    animation: none;   
+}
+
+.introduction__button:active {
+    transform: scale(1);
+}
+
+.introduction__image {
+    animation: rotate 8s ease infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
 }
 
 .guides__people-and-society, .guides__power-and-politics {
@@ -201,6 +231,13 @@ color: #1C1B1B;
     align-items: center;
 }
 
+.pricing__guide-element img {
+    transition: all 2s ease;
+}
+.pricing__guide-element img:hover {
+    transform: scale(1.05)
+}
+
 .pricing__title {
     text-align: center;
     font-size: 36px;
@@ -235,6 +272,174 @@ color: #1C1B1B;
     color: #000000;
     cursor: pointer;
 }
+
+.features__container {
+    margin-top:190px;
+}
+
+.features__title {
+font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+color: #000000;
+}
+
+.features__wrapper {
+    margin: 69px 0 110px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 110px;
+}
+.features__point {
+    max-width: 340px;
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.features__point:hover {
+    transform: scale(1.1)
+}
+    
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.circle-one {
+    background-color: #21F7EC;
+}
+.circle-two {
+    background-color: #33D3BC;
+}
+.circle-three {
+    background-color: #18A5C6;
+}
+.circle-four {
+    background-color: #D38F62;
+}
+.circle-five {
+    background-color: #F94C43;
+}
+.circle-six {
+    background-color: #D399FF;
+}
+
+.features__text {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    margin-top: 26px;
+}
+
+.interviews {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #F0F0F0 56%, #FFFFFF 44%);
+}
+.interviews__title {
+    max-width: 705px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto 102px auto;
+}
+
+.interviews__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interviews__point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interviews__text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.6px;
+    color: #000000;
+    max-width: 270px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.interviews__interviewee {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 44px;
+}
+
+.interviews__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    margin-bottom: 51px;
+}
+
+.footer {
+    background-color: #000000;
+    color: #FFFFFF  ;
+}
+
+.footer__nav-wrapper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__about-contacts-wrapper {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social-links {
+    margin-top:25px;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav {
+    margin-bottom: -12px;
+    margin-top: 36px;
+}
+
+.footer__nav li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.footer__copyright {
+    text-align: center;
+    padding: 16px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+}
+
 
 
 
