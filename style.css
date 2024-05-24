@@ -842,7 +842,7 @@ cursor: pointer;
     }
     
     .introduction__container::after {
-        /* content: ""; */
+        content: "";
         width: 250px;
         height: 290px;
         background: url(./Img/Introduction_image.png);
@@ -851,6 +851,10 @@ cursor: pointer;
         position: absolute;
         top: 50px;
         left: 55vw;
+    }
+
+    .interviews__title {
+        max-width: 530px;
     }
 
     .footer__nav-wrapper {
@@ -875,12 +879,6 @@ cursor: pointer;
 
     .footer__copyright {
         padding: 10px 0 16px;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    .interviews__title {
-        max-width: 530px;
     }
 }
 
@@ -987,10 +985,6 @@ cursor: pointer;
         font-size: 26px;
         line-height: 30px;
     }
-    
-/* исправляем интродакшн */
-/* исправляем гайд дескрипшн */
-
 
 }
 
