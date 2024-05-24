@@ -14,12 +14,8 @@
                 <ul class="nav__list">
                     <li>Shop</li>
                     <li>Collections</li>
-                    <li>
-                        Try a Free Guide
-                    </li>
-                    <li>
-                        Stories
-                    </li>
+                    <li>Try a Free Guide</li>
+                    <li>Stories</li>
                 </ul>
             </nav>
             <img src="./Img/logo.svg" alt="logo" class="logo">
@@ -27,15 +23,42 @@
                 <a href="/">
                     <img src="./Img/Icons/inst_icon.svg" alt="inst">
                 </a>
-                <a href="/"></a>
+                <a href="/">
                     <img src="./Img/Icons/search_icon.svg" alt="search">
                 </a>
-                <a href="/"></a>
+                <a href="/">
                     <img src="./Img/Icons/basket_icon.svg" alt="basket">
                 </a>
             </div>
         </div>
     </header>
+    <div class="header-placeholder"></div>
+    <header class="mobile-header">
+        <div class="container mobile-header__container">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">Shop</a></li>
+                  <li><a class="menu__item" href="#">Collections</a></li>
+                  <li><a class="menu__item" href="#">Try a Free Guide</a></li>
+                  <li><a class="menu__item" href="#">Stories</a></li>
+                </ul>
+              </div>
+            <img src="./Img/logo.svg" alt="logo" class="logo">
+            <div>
+                <a href="/">
+                    <img src="./Img/Icons/search_icon.svg" alt="search">
+                </a>
+                <a href="/">
+                    <img src="./Img/Icons/basket_icon.svg" alt="basket">
+                </a>
+            </div>
+        </div>
+    </header>
+
     <main>
         <section class="introduction">
             <div class="container introduction__container">
@@ -44,7 +67,7 @@
                     <p class="introduction__text">Get to know the world through our concise, informative and inspiring guides.</p>
                     <button class="introduction__button">Shop Now</button>
                 </article>
-                <img class="introduction__image" width="500px" height="550px" src="./Img/Introduction_image.png" alt="devices">
+                <img class="introduction__image" src="./Img/Introduction_image.png" alt="devices">
             </div>
         </section>
         <section class="our-guides">
@@ -81,10 +104,10 @@
         </section>
 
             <section class="guides__people-and-society">
-                <div class="container guides-description__container">
+                <div class="container guides-description__container guides-description__mobile-first">
                     <img class="people-and-society__image" src="./Img/people_and_society_image.png" alt="french-people-and-society-guide">
                     <article class="guides-description__article">
-                        <h2 class="guides-description__title">
+                        <h2 class="guides-description__title guides-description__title-mob-first">
                             People and Society
                         </h2>
                         <p class="guides-description__text">
@@ -110,9 +133,9 @@
             </section>
             <section class="guides__power-and-politics">
                 <div class="container guides-description__container">
-                    <img src="./Img/power_and_politics_image.png" alt="german-power-and-politics">
+                    <img class="power-and-politics__image" src="./Img/power_and_politics_image.png" alt="german-power-and-politics">
                     <article class="guides-description__article">
-                        <h2 class="guides-description__title">
+                        <h2 class="guides-description__title guides-description__title-mob-second">
                             Power and Politics
                         </h2>
                         <p class="guides-description__text">
@@ -203,7 +226,7 @@
                             <div class="footer__about-info">
                                 <p>ABOUT</p>
                                 <nav class="footer__nav">
-                                    <ul class="footer__nav-list">
+                                    <ul class="footer__nav-list footer__nav-list-about">
                                         <li>About Us</li>
                                         <li>Privacy Policy</li>
                                         <li>Terms and Conditions</li>
@@ -214,7 +237,7 @@
                             <div class="footer__contacts-info">
                                 <p>CONTACT</p>
                                 <nav class="footer__nav">
-                                    <ul class="footer__nav-list">
+                                    <ul class="footer__nav-list footer__nav-list-contact">
                                         <li>Email hi@thalby.com</li>
                                         <li>Help</li>
                                     </ul>
