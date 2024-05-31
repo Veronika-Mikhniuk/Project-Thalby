@@ -445,6 +445,10 @@ input {
     padding-left: 8px;
 }
 
+input:focus {
+    outline-width: 0;
+}
+
 .form__button {
     margin: auto;
     width: 115px;
